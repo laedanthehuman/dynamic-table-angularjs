@@ -1,0 +1,12 @@
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th ng-repeat="coluna in ctrl.colunas">{{coluna.exebivel}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="valor in ctrl.valores">
+            <td ng-repeat="coluna in ctrl.colunas">{{valor[coluna.propriedade]}}</td>
+        </tr>
+    </tbody>
+</table>
